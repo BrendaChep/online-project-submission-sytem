@@ -34,7 +34,7 @@
               
                       
 
-              <br />
+          
               <button type="" name="submit" onclick="" class="w3-padding w3-btn-block w3-blue">Submit Report</button>
             </form>
           </div>

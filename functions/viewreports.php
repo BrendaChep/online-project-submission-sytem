@@ -1,7 +1,7 @@
 <?php
 	include '../dbcon.php';
 
-	$grpsql = mysqli_query($dbcon, "SELECT * FROM grp ") or die(mysqli_error());
+	$grpsql = mysqli_query($dbcon, "SELECT * FROM stud ") or die(mysqli_error());
     //$group = mysqli_fetch_array($grpsql);
 
     

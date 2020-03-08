@@ -237,6 +237,26 @@ INSERT INTO `student` (`regNo`, `fName`, `mName`, `lName`, `email`, `phoneNo`, `
 -- Table structure for table `suggestedgroup`
 --
 
+CREATE TABLE `stud` (
+   `regNo` varchar(50) NOT NULL,
+  `appId` int(7) NOT NULL,
+  `approval` int(11) NOT NULL,
+  `empId` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `grp`
+--
+
+INSERT INTO `stud` (`appId`, `approval`, `empId`) VALUES
+(6482, 1, 'mtunga','CIT-100-020/2020');
+
+
+
+ALTER TABLE `stud`
+  ADD PRIMARY KEY (`appId`),
+  ADD KEY `empId` (`empId`)
+   ADD UNIQUE KEY `regNo` (`regNo`);
 
 
 -- --------------------------------------------------------

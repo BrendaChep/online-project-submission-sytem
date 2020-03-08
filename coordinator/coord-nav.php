@@ -42,10 +42,10 @@ exit();
             $concept_note = mysqli_fetch_array($studentconcept);
             $concept_num_row = mysqli_num_rows($studentconcept);
             if($concept_num_row > "0") { ?>
-                <a href="viewconcepts.php"><button class="w3-btn w3-btn-block w3-blue w3-left-align"><i class="fa fa-file-text fa-fw w3-margin-right"></i> View Concept Notes</button></a>
+                <a href="viewconcepts.php"><button class="w3-btn w3-btn-block w3-blue w3-left-align"><i class="fa fa-file-text fa-fw w3-margin-right"></i> View proposal notes</button></a>
                 <?php } 
             else { 
-                echo "There are no any submitted concepts. <br />";
+                echo "There are no any submitted proposals. <br />";
             } 
               
             ?> 
@@ -55,14 +55,14 @@ exit();
       <br />
         <div class="w3-card-2 w3-round">
         <div class="w3-white">
-          <a href="groups.php"><button class="w3-btn-block w3-blue w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i>View Groups </button></a>
+          <a href="groups.php"><button class="w3-btn-block w3-blue w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i>View students </button></a>
           
           </div>
         </div>
         <br />
         <div class="w3-card-2 w3-round">
         <div class="w3-white">  
-              <a href="approve-groups.php"><button  class="w3-btn w3-btn-block w3-blue w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> Approve Groups</button></a>            
+              <a href="approve-groups.php"><button  class="w3-btn w3-btn-block w3-blue w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> Approve students</button></a>            
         </div>
       </div>
       <br />
@@ -84,7 +84,7 @@ exit();
       
       <div class="w3-card-2 w3-round">
         <div class="w3-white">
-          <a href="../search-projects.php"><button id="" class="w3-btn-block w3-blue w3-left-align" ><i class="fa fa-file-text fa-fw w3-margin-right"></i> Project Archieve</button></a>
+          <a href="../search-projects.php"><button id="" class="w3-btn-block w3-blue w3-left-align" ><i class="fa fa-file-text fa-fw w3-margin-right"></i> Project Archive</button></a>
         </div>
       </div>
       <br>   
